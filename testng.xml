@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2">
+
+<listeners>
+		<listener class-name="com.resil.TestResil.Listener" />
+	</listeners>
+
+
+	<test name="test">
+		<!-- <groups> 
+			<run>
+			<include name="Login" />
+			<include name="Analysis" />
+			<include name="Sanity" /> 
+			
+			<include name="Functional" />
+			
+			<include name="Regression" />
+			<include name="SmokeTest" />  
+			
+			
+			</run> 
+		</groups>  -->
+		<classes>
+			<class name="com.resil.TestResil.TestResilProject" />
+			
+			<!--  <class name="com.resil.TestResil.Modules.ItemTestassociation">
+				 <methods>
+					<include name="ItemTestMapping" />
+					<include name="EditItemTestMapping" />
+					<include name="HistoryItemTestMapping" />
+					<include name="CopyItemTestMapping" />
+					<include name="PreviewItemTestMapping" />
+					<include name="searchItemTestMapping" />
+					<exclude name="SpecsInactiveToItemTestMapping" />
+					<exclude name="MailInactiveToItemTestMapping" />
+				</methods>  
+			</class>   -->
+			<!-- <class name="com.resil.TestResil.Analysis">
+			<methods>
+			<exclude name="testSearch"></exclude>
+			<exclude name="testRMAnalysis"></exclude>
+			<include name="VerifyparameterType"></include>
+			<exclude name="testSecondAnalysis"></exclude>
+			<exclude name="testPreview"></exclude>
+			<exclude name="testRMAnalysisRejected"></exclude>
+			<exclude name="testRMAnalysisSendForSA"></exclude>
+			<exclude name="testValiadtionforAnalysisType"></exclude>
+			</methods>
+		</class> -->
+			
+			<!-- <class name="com.resil.TestResil.RMShelflife">
+			<methods>
+			<include name="testRMShelflife"></include>
+			</methods>
+		</class> -->
+		<class name="com.resil.TestResil.FinishGoods">
+			<methods>
+			<include name="testFGAnalysis"></include>
+			<include name="VerifyparameterType"></include>
+			<exclude name="testValiadtionforAnalysisType"></exclude>
+			</methods>
+		</class>
+			
+		<!-- <class name="com.resil.TestResil.Modules.SubModule">
+					<methods>
+					<include name="testPreview" />
+					<include name="testEditSubmodule" />
+					<include name="testToggle" />
+					<include name="testPagination" />
+					<include name="testSearch" />
+				</methods>
+			</class>   
+			<class name="com.resil.TestResil.Modules.UomPage">
+				<methods>
+					<include name="AddUom" />
+					<include name="EditUom" />
+					<include name="StatusToggle" />
+					<include name="Search" />
+					<include name="DuplicateUOMName" />
+					<include name="UomPreview" />
+					<include name="UomPageEdit" /> 
+				</methods>
+			</class> 
+			<class name="com.resil.TestResil.Modules.NoRange">
+				<methods>
+					<include name="NoRange_Add" />
+					<include name="NoRange_Edit" />
+					<include name="NoRange_Preview" />
+					<include name="NoRange_Search" />
+					<include name="NoRange_StatusToggle" />
+				</methods>
+			</class>
+			<class name="com.resil.TestResil.Modules.MailingList">
+				<methods>
+					<include name="testAddMailinglist" />
+					<include name="testEdit" />
+					<include name="testPreview" />
+					<include name="testCopy" />
+					<include name="testPagination" />
+					<include name="testSearch" />
+					<include name="testHistory" />
+					<include name="testValidationHistory" /> 
+					
+				</methods>
+			</class> 
+			
+			<class name="com.resil.TestResil.TestSpecs" />
+		 <class name="com.resil.TestResil.EditSpecs">
+					<methods>
+					<include name="Specs_Copy" />
+					<include name="Specs_Preview" />
+					<include name="Specs_Search" />
+					<exclude name="Specs_History" />
+					<include name="Specs_Hstry" />
+					<include name="Specs_StatusInactivetoformula" />
+					<include name="Specs_NonSpecsStatusInactivetoformula" />
+					<include name="Specs_statusToggle" />
+				</methods>
+			</class> 
+			
+			<class name="com.resil.TestResil.Modules.COATemplate">
+			<methods>
+					<include name="testAddCoaTemplate" />
+					<exclude name="testEditCoaTemplate" />
+					<include name="testHistory" />
+					<include name="testCopyCoaTemplate" />
+					<include name="testPreviewCoaTemplate" />
+					<include name="testSearchCoaTemplate" />
+				</methods>
+				</class> 
+					<class name="com.resil.TestResil.UserManagement" >
+				<methods>
+					<include name="testHistory" />
+					</methods>
+					</class>   -->
+		</classes>  
+	</test>
+	
+	<!-- Test -->
+</suite> <!-- Suite -->
